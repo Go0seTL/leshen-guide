@@ -9,12 +9,12 @@
 
 1. 前言
 2. 版本更新（时间线）
-3. 阵容排行（S / A / B 三档，点卡片看详情、阵容码）
-4. 海克斯排行（银 / 金 / 棱彩筛选）
-5. 装备排行（成装 / 光明装 / 奥恩神器 / 纹章四个子版块）
+3. 阵容排行（27 套，S / A / B / C / D 五档，点卡片看阵容构成、主C、核心装备）
+4. 海克斯排行（76 枚，银 / 金 / 棱彩筛选，收录 S / A 档）
+5. 装备排行（成装 8 / 光明装 20 / 奥恩神器 17 / 纹章 11；特殊装备展示 S / A / B 档）
 6. 页脚免责声明
 
-所有内容目前都是**演示数据**，改成你自己的资料即可。页面里的图片也是自动生成的占位图，替换方法见下文。
+榜单名次参考 **datatft** 的 S18.6 公开榜单，评级仅代表来源观点。页面里的图片是自动生成的**示例占位图**，替换方法见第三节；具体数据请以游戏内为准。
 
 ---
 
@@ -52,7 +52,9 @@ LeShenJCCWeb/
 │     ├─ hex/              ← 海克斯图（1:1）
 │     └─ items/            ← 装备图（1:1，四个子版块共用这个文件夹）
 ├─ tools/
-│  └─ generate_demo_images.py  ← 生成占位图的脚本，可删
+│  ├─ generate_demo_images.py  ← 生成占位图的脚本
+│  └─ demo_image_specs.json    ← 占位图规格（名称 / 配色 / 分类）
+├─ 图片文件名对照表.md       ← 换图时查「名称 → id」
 ├─ README.md
 ├─ .nojekyll               ← GitHub Pages 用，别删
 └─ .gitignore
@@ -75,72 +77,19 @@ LeShenJCCWeb/
 
 ### 第 2 步：按文件名放进对应文件夹
 
-文件名必须等于 `js/data.js` 里的 `id`。例如阵容「暗星狙神」的 `id` 是 `darkstar-sniper`：
+文件名必须等于 `js/data.js` 里的 `id`。完整的「名称 → id → 文件路径」对照表已经生成：
 
-```text
-assets/img/teams/darkstar-sniper.webp
-```
+**打开 [`图片文件名对照表.md`](图片文件名对照表.md) 查找即可。**
 
-其他阵容的文件名对照：
+示例：
 
-| 阵容 | id / 文件名 |
-|---|---|
-| 暗星狙神 | `darkstar-sniper` |
-| 星守法师 | `star-guardian-mage` |
-| 源计划枪手 | `project-gunner` |
-| 福牛格斗 | `ox-fighter` |
-| 龙魂炮手 | `dragon-cannon` |
-| 圣贤护卫 | `holy-guardian` |
-| 黑客刺客 | `hacker-assassin` |
-| 机甲卫士 | `mecha-warden` |
+| 内容 | 放进哪里 | 示例文件名 |
+|---|---|---|
+| 阵容「7峡谷魔沼蛙」 | `assets/img/teams/` | `comp-16336.webp` |
+| 海克斯「别再错过」 | `assets/img/hex/` | `aug-missedconnections-1.webp` |
+| 光明装「光明版鬼索的狂暴之刃」 | `assets/img/items/` | `item-1539.webp` |
 
-海克斯：
-
-| 海克斯 | 文件名 |
-|---|---|
-| 珠光莲花 | `jeweled-lotus` |
-| 潘朵拉的装备 | `pandoras-items` |
-| 便携锻炉 | `portable-forge` |
-| 升级咯 | `level-up` |
-| 高端购物 | `high-end-shopping` |
-| 复苏之风 | `second-wind` |
-| 战斗法师 | `battle-mage` |
-| DD街区 | `dd-street` |
-| 神奇游商 | `wandering-merchant` |
-| 团队建设 | `team-building` |
-
-装备（全部放在 `assets/img/items/`）：
-
-| 装备 | 文件名 |
-|---|---|
-| 无尽之刃 | `infinity-edge` |
-| 朔极之矛 | `spear-of-shojin` |
-| 珠光护手 | `jeweled-gauntlet` |
-| 最后的轻语 | `last-whisper` |
-| 狂徒铠甲 | `warmogs` |
-| 石像鬼石板甲 | `gargoyle` |
-| 蓝霸符 | `blue-buff` |
-| 鬼索的狂暴之刃 | `guinsoo` |
-| 光明无尽之刃 | `radiant-infinity` |
-| 光明珠光护手 | `radiant-jeweled` |
-| 光明朔极之矛 | `radiant-shojin` |
-| 光明石像鬼石板甲 | `radiant-gargoyle` |
-| 光明狂徒铠甲 | `radiant-warmogs` |
-| 光明鬼索的狂暴之刃 | `radiant-guinsoo` |
-| 无尽之力 | `ornn-infinity-force` |
-| 金币收集者 | `ornn-gold-collector` |
-| 死亡之蔑 | `ornn-deaths-defiance` |
-| 狙击手的专注 | `ornn-snipers-focus` |
-| 永恒凛冬 | `ornn-eternal-winter` |
-| 魔蕴 | `ornn-moguls-mail` |
-| 狙神纹章 | `emblem-sniper` |
-| 法师纹章 | `emblem-mage` |
-| 星守纹章 | `emblem-star` |
-| 源计划纹章 | `emblem-project` |
-| 福牛纹章 | `emblem-ox` |
-| 格斗家纹章 | `emblem-brawler` |
-
-> 文件名建议只用小写字母、数字和短横线，别用中文或空格，避免网址编码问题。
+文件名建议只用小写字母、数字和短横线，不要用中文或空格，避免网址编码问题。
 
 ### 第 3 步：改一个字母，启用你的图片
 
@@ -161,8 +110,7 @@ imageExt: "webp",
 - 如果你的图是 PNG，就改成 `"png"`；JPG 同理。
 - 可以只替换一部分：没放图的卡会自动回退到原来的示例 SVG，不会出现裂图。
 - 如果你想用完全不同的文件名，把 `data.js` 里对应的 `id` 一起改掉，图片名也跟着改。
-
-> 页面上的示例图在 `assets/img/` 里，命名规则相同。以后所有图片都替换完，可以把 `*.svg` 示例图删掉（对应位置有图就不会再回退）。
+- 全部替换完后，可以把 `assets/img/` 里的 `*.svg` 示例图删掉。
 
 ---
 
@@ -170,33 +118,35 @@ imageExt: "webp",
 
 打开 `js/data.js`，全部内容都在这个文件里：
 
-- `meta`：站名、作者、版本号、最后更新时间、图片扩展名
+- `meta`：站名、作者、版本号、最后更新时间、图片扩展名、数据来源信息
 - `updates`：版本更新记录（数组，第一条会显示「最新」并同步到左侧当前版本）
-- `teams`：阵容列表
-  - `tier`：`S` / `A` / `B`
-  - `rating`：强度评分（数字）
-  - `difficulty`：难度（低 / 中 / 高）
+- `teams`：阵容列表（当前 27 套）
+  - `tier`：`S` / `A` / `B` / `C` / `D`
   - `tags`：标签数组
+  - `carry`：主C名称
   - `lineup`：阵容构成，`cost` 是费用（1–5，决定小标签颜色）
   - `coreItems`：核心装备
-  - `rhythm`：运营节奏，`time` + `text`
-  - `position`：站位思路
-  - `note`：博主笔记
-  - `code`：阵容码（复制按钮复制的就是它）
-- `hexes`：海克斯列表
+  - `summary` / `note`：卡片摘要和弹窗说明
+  - 可选 `rhythm`（运营节奏）、`position`（站位）、`code`（阵容码）；没有对应字段时弹窗会自动隐藏这些区块
+- `hexes`：海克斯列表（当前 76 枚）
   - `rarity`：`银` / `金` / `棱彩`（筛选按钮按这个过滤）
-  - `tier`：`S` / `A` / `B`
-  - `rank`：排名（数字，会自动补成 01、02……）
+  - `tier`：`S` / `A`
+  - `rank`：品质内排名（数字，会自动补成 01、02……）
 - `items`：装备，分 `normal`（成装）、`radiant`（光明装）、`ornn`（奥恩神器）、`emblem`（纹章）
   - 每个分类里的 `rank` 前 3 名会自动变成领奖台大卡片，其余变成列表
+  - 特殊装备带 `tier` 字段（S / A / B），会显示等级标签；常规成装没有等级
+  - `stats` / `obtain` / `desc` / `tip` 都是可改的展示文案
 
-改完保存刷新即可。标题里的数字（8 套阵容 / 10 枚海克斯 / 26 件装备）会自动按数据长度更新。
+改完保存刷新即可。标题里的数字（27 套阵容 / 76 枚海克斯 / 56 件装备）会自动按数据长度更新。
 
-> 某个档位的阵容不满 3 的倍数时，页面会自动补一个「更多阵容整理中」的占位卡。以后加够数量自然消失；不想看到的话可以改 `js/main.js` 里的 `placeholders` 逻辑。
+> 当前榜单数据是参考 datatft S18.6 整理的，不是官方数据；阵容也没有阵容码。想更新时，按同样结构替换数组即可，或者直接告诉我重新抓取。
 
 ---
 
 ## 五、部署到 GitHub Pages
+
+> 当前仓库已经创建并部署：<https://github.com/Go0seTL/leshen-guide>  
+> Pages 已开启（`main` 分支根目录）。下面的步骤保留给迁移或重新搭建时参考，不需要再执行一遍。
 
 需要是 **Public 仓库**（免费 Pages 的要求）。
 
@@ -239,7 +189,7 @@ gh repo create leshen-guide --public --source=. --remote=origin --push
 
 Pages 需要在网页端 Settings → Pages 打开，或者再用 API 开启。
 
-> 仓库名用 `leshen-guide`、`jcc-guide` 都可以。如果你叫我直接帮你建仓库，告诉我想要的仓库名即可。
+> 当前仓库名是 `leshen-guide`，已经配置好 Pages；以后只改内容推送即可，不用重新建仓库。
 
 ### 以后更新网站
 
@@ -260,8 +210,8 @@ GitHub Pages 会自动重新构建，等 1–2 分钟刷新线上地址即可。
 **Q：手机打开图片加载慢？**
 把图片压成 WebP，单张 200KB 以内。阵容图 1200 宽足够了。
 
-**Q：复制阵容码没反应？**
-本地 `file://` 打开时部分浏览器限制剪贴板，代码会自动使用兼容方案；如果仍失败，部署到 HTTPS（GitHub Pages）后再试。
+**Q：为什么弹窗里没有阵容码 / 复制按钮？**
+当前榜单只提供阵容构成和评级，没有阵容码。如果以后你在 `js/data.js` 给某套阵容加了 `code` 字段，弹窗会自动显示复制按钮。
 
 **Q：想改颜色 / 字体？**
 `css/style.css` 顶部的 `:root` 里改 `--gold`、`--bg`、`--font` 等变量即可。
@@ -270,12 +220,13 @@ GitHub Pages 会自动重新构建，等 1–2 分钟刷新线上地址即可。
 复制 `index.html` 里任意一个 `<section>`，在 `data.js` 加数据，在 `main.js` 加渲染函数。也可以直接找我加。
 
 **Q：当前内容是真的吗？**
-不是。所有阵容、海克斯、装备和阵容码都是演示数据，页面上也标了「演示数据」。替换成你自己的资料后再公开。
+阵容、强化和装备名次来自 datatft 的 S18.6 公开榜单，评级仅代表来源观点；图片仍是示例占位图。具体数值与效果请以游戏内为准。
 
 ---
 
 ## 七、素材与免责声明
 
 - 本站为个人教学资料整理，与《金铲铲之战》官方无关。
-- 游戏名称、英雄与装备名称版权归原作者 / 发行方所有。
-- 图片与文字内容由站长自行准备和上传。
+- 榜单名次参考 [datatft 阵容榜](https://jcc.datatft.com/comp/rank)、[强化榜](https://jcc.datatft.com/augment/tier)、[装备榜](https://jcc.datatft.com/item/tier)；强化/装备评级由 JOC 冠军 TLG糕手雕妹 提供。
+- 游戏名称、英雄、装备与强化名称版权归原作者 / 发行方所有。
+- 页面图片为自动生成的占位图；替换后的图片由站长自行准备和上传。

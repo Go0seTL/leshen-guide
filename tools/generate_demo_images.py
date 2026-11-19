@@ -17,67 +17,9 @@ ITEM_DIR = ROOT / "assets" / "img" / "items"
 
 FONT = "'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif"
 
-TEAMS = [
-    ("darkstar-sniper", "暗星狙神", "#f5c451", "#ff8a4c",
-     ["艾希", "厄斐琉斯", "莫德凯撒", "瑟提", "烬", "蕾欧娜", "索拉卡", "妮蔻"]),
-    ("star-guardian-mage", "星守法师", "#a78bfa", "#6d5bd0",
-     ["阿狸", "辛德拉", "妮蔻", "索拉卡", "拉克丝", "蕾欧娜", "塔姆", "维克托"]),
-    ("project-gunner", "源计划枪手", "#4fd1c5", "#2b8a9e",
-     ["金克丝", "蔚", "艾克", "卡蜜尔", "烬", "厄斐琉斯", "蕾欧娜", "盖伦"]),
-    ("ox-fighter", "福牛格斗", "#ff7a59", "#d84545",
-     ["瑟提", "阿利斯塔", "蔚", "盖伦", "塔姆", "蕾欧娜", "金克丝", "索拉卡"]),
-    ("dragon-cannon", "龙魂炮手", "#f6a04d", "#c86b2b",
-     ["崔丝塔娜", "库奇", "塔姆", "瑟提", "妮蔻", "索拉卡", "蕾欧娜", "盖伦"]),
-    ("holy-guardian", "圣贤护卫", "#8ecae6", "#4a90a4",
-     ["蕾欧娜", "布隆", "盖伦", "拉克丝", "索拉卡", "塔姆", "艾希", "妮蔻"]),
-    ("hacker-assassin", "黑客刺客", "#c084fc", "#7c3aed",
-     ["劫", "阿卡丽", "艾克", "卡蜜尔", "蔚", "金克丝", "塔姆", "妮蔻"]),
-    ("mecha-warden", "机甲卫士", "#7dd3fc", "#3b82f6",
-     ["盖伦", "阿利斯塔", "蕾欧娜", "布隆", "金克丝", "艾希", "索拉卡", "妮蔻"]),
-]
-
-HEXES = [
-    ("jeweled-lotus", "珠光莲花", "棱彩", "珠"),
-    ("pandoras-items", "潘朵拉的装备", "棱彩", "潘"),
-    ("portable-forge", "便携锻炉", "棱彩", "锻"),
-    ("level-up", "升级咯", "棱彩", "升"),
-    ("high-end-shopping", "高端购物", "金", "购"),
-    ("second-wind", "复苏之风", "金", "风"),
-    ("battle-mage", "战斗法师", "金", "战"),
-    ("dd-street", "DD街区", "金", "DD"),
-    ("wandering-merchant", "神奇游商", "银", "商"),
-    ("team-building", "团队建设", "银", "团"),
-]
-
-ITEMS = [
-    # id, name, category, glyph, accent1, accent2
-    ("infinity-edge", "无尽之刃", "normal", "刃", "#f5c451", "#d99a26"),
-    ("spear-of-shojin", "朔极之矛", "normal", "矛", "#6fc3ff", "#3478c8"),
-    ("jeweled-gauntlet", "珠光护手", "normal", "珠", "#c09cff", "#7a5bd0"),
-    ("last-whisper", "最后的轻语", "normal", "语", "#7de3c3", "#2b8a7a"),
-    ("warmogs", "狂徒铠甲", "normal", "狂", "#ff9d6c", "#d05a3b"),
-    ("gargoyle", "石像鬼石板甲", "normal", "甲", "#8ecae6", "#4a90a4"),
-    ("blue-buff", "蓝霸符", "normal", "蓝", "#63b3ff", "#2f6dd0"),
-    ("guinsoo", "鬼索的狂暴之刃", "normal", "怒", "#f5a3ff", "#b05ac8"),
-    ("radiant-infinity", "光明无尽之刃", "radiant", "刃", "#ffe08a", "#e2a72f"),
-    ("radiant-jeweled", "光明珠光护手", "radiant", "珠", "#e3c7ff", "#9b7ae0"),
-    ("radiant-shojin", "光明朔极之矛", "radiant", "矛", "#a8dcff", "#5b9fd6"),
-    ("radiant-gargoyle", "光明石像鬼石板甲", "radiant", "甲", "#b7e4f2", "#6aa9bb"),
-    ("radiant-warmogs", "光明狂徒铠甲", "radiant", "狂", "#ffc09c", "#e08a5a"),
-    ("radiant-guinsoo", "光明鬼索的狂暴之刃", "radiant", "怒", "#ffc1f0", "#d47ac0"),
-    ("ornn-infinity-force", "无尽之力", "ornn", "力", "#ffb36b", "#d9632f"),
-    ("ornn-gold-collector", "金币收集者", "ornn", "金", "#ffd166", "#c58a1f"),
-    ("ornn-deaths-defiance", "死亡之蔑", "ornn", "蔑", "#ff8f6b", "#b93f3f"),
-    ("ornn-snipers-focus", "狙击手的专注", "ornn", "狙", "#ffd98a", "#c98b2f"),
-    ("ornn-eternal-winter", "永恒凛冬", "ornn", "冬", "#9fe3ff", "#4b9bc7"),
-    ("ornn-moguls-mail", "魔蕴", "ornn", "蕴", "#d8a8ff", "#8a5bd0"),
-    ("emblem-sniper", "狙神纹章", "emblem", "狙", "#c9b6ff", "#7c5cf0"),
-    ("emblem-mage", "法师纹章", "emblem", "法", "#b9a5ff", "#6d55d9"),
-    ("emblem-star", "星守纹章", "emblem", "星", "#d8b8ff", "#8a5fd6"),
-    ("emblem-project", "源计划纹章", "emblem", "源", "#a8c8ff", "#537fe0"),
-    ("emblem-ox", "福牛纹章", "emblem", "福", "#ffc7a8", "#d96a4f"),
-    ("emblem-brawler", "格斗家纹章", "emblem", "斗", "#c4b5ff", "#7058d8"),
-]
+TEAMS = []
+HEXES = []
+ITEMS = []
 
 RARITY_COLORS = {
     "银": ("#dbe5f2", "#8290a6"),
@@ -117,11 +59,13 @@ def team_svg(team, index):
     positions = [
         (483, 252), (561, 252), (639, 252),
         (444, 342), (600, 342), (756, 342),
-        (483, 432), (639, 432),
+        (483, 432), (561, 432), (639, 432),
     ]
     cells = []
     occupied = set()
     for idx, (cx, cy) in enumerate(positions):
+        if idx >= len(champs):
+            continue
         occupied.add((round(cx), round(cy)))
         champion = champs[idx]
         initial = champion[0]
@@ -188,7 +132,7 @@ def team_svg(team, index):
   <path d="M1152 552v52h-52" fill="none" stroke="{accent1}" stroke-opacity=".3" stroke-width="2"/>
 
   <rect x="48" y="588" width="56" height="3" rx="1.5" fill="{accent1}"/>
-  <text x="48" y="624" font-family="{FONT}" font-size="20" letter-spacing="2.5" fill="#b8c3d4">DEMO · 示例阵容站位图</text>
+  <text x="48" y="624" font-family="{FONT}" font-size="20" letter-spacing="2.5" fill="#b8c3d4">DEMO · 阵容构成示意</text>
   <text x="50" y="650" font-family="{FONT}" font-size="13" letter-spacing="1.2" fill="#6d7a90">替换：assets/img/teams/{team_id}.svg</text>
   <text x="1152" y="628" text-anchor="end" font-family="{FONT}" font-size="13" letter-spacing="2" fill="#6d7a90">TEAM {index:02d} / {len(TEAMS):02d}</text>
   <path d="M48 606h1104" stroke="url(#lineGrad)" stroke-opacity=".2"/>
@@ -357,8 +301,29 @@ FAVICON = """<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" view
 
 
 def main():
+    import json
+
+    specs_path = ROOT / "tools" / "demo_image_specs.json"
+    specs = json.loads(specs_path.read_text(encoding="utf-8"))
+
+    global TEAMS, HEXES, ITEMS
+    TEAMS = [
+        (x["id"], x["name"], x["accent1"], x["accent2"], x["champions"])
+        for x in specs.get("teams", [])
+    ]
+    HEXES = [
+        (x["id"], x["name"], x["rarity"], x["glyph"])
+        for x in specs.get("hexes", [])
+    ]
+    ITEMS = [
+        (x["id"], x["name"], x["category"], x["glyph"], x["accent1"], x["accent2"])
+        for x in specs.get("items", [])
+    ]
+
     for folder in (TEAM_DIR, HEX_DIR, ITEM_DIR):
         folder.mkdir(parents=True, exist_ok=True)
+        for old in folder.glob("*.svg"):
+            old.unlink()
 
     for index, team in enumerate(TEAMS, start=1):
         (TEAM_DIR / f"{team[0]}.svg").write_text(team_svg(team, index), encoding="utf-8")

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="别再错过 海克斯示例图标">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#131c2e"/>
+      <stop offset=".6" stop-color="#0b111c"/>
+      <stop offset="1" stop-color="#070b12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".42" r=".55">
+      <stop offset="0" stop-color="#dbe5f2" stop-opacity=".32"/>
+      <stop offset=".7" stop-color="#dbe5f2" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#dbe5f2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dbe5f2"/>
+      <stop offset="1" stop-color="#8290a6"/>
+    </linearGradient>
+    <linearGradient id="hexFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dbe5f2" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#dbe5f2" stop-opacity=".02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="64" fill="url(#bg)"/>
+  <rect x="1" y="1" width="510" height="510" rx="63" fill="none" stroke="url(#accent)" stroke-opacity=".42" stroke-width="2"/>
+  <rect x="18" y="18" width="476" height="476" rx="50" fill="none" stroke="#ffffff" stroke-opacity=".055"/>
+  <circle cx="256" cy="248" r="216" fill="url(#glow)"/>
+
+  <polygon points="256.0,96.0 398.0,178.0 398.0,342.0 256.0,424.0 114.0,342.0 114.0,178.0" fill="url(#hexFill)" stroke="url(#accent)" stroke-opacity=".55" stroke-width="4"/>
+  <polygon points="256.0,120.0 377.2,190.0 377.2,330.0 256.0,400.0 134.8,330.0 134.8,190.0" fill="none" stroke="#dbe5f2" stroke-opacity=".12" stroke-width="1"/>
+
+  <g stroke="#dbe5f2" stroke-opacity=".22" stroke-width="2">
+    <path d="M256 62v26"/><path d="M256 432v26"/>
+    <path d="M92 260h24"/><path d="M396 260h24"/>
+    <path d="M140 144l18 18"/><path d="M354 376l18 18"/>
+    <path d="M372 144l-18 18"/><path d="M158 376l-18 18"/>
+  </g>
+
+  <text x="256" y="306" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="106" font-weight="900" fill="url(#accent)">别</text>
+
+  <g transform="translate(34, 32)">
+    <rect width="124" height="32" rx="16" fill="#080d16" fill-opacity=".8" stroke="#dbe5f2" stroke-opacity=".35"/>
+    <text x="16" y="21" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="12" letter-spacing="1.5" fill="#dbe5f3">海克斯 · 银</text>
+  </g>
+  <text x="478" y="53" text-anchor="end" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="12" letter-spacing="1.6" fill="#dbe5f2" fill-opacity=".8">SILVER</text>
+
+  <text x="256" y="446" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="25" font-weight="700" fill="#e9eff9">别再错过</text>
+  <text x="34" y="486" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="11" letter-spacing="1.4" fill="#657188">DEMO · 512 × 512</text>
+  <text x="478" y="486" text-anchor="end" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="11" letter-spacing="1.4" fill="#657188">AUGMENT 01</text>
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="沙皇龙龟 示例阵容图">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111b2d"/>
+      <stop offset=".55" stop-color="#0a101b"/>
+      <stop offset="1" stop-color="#06090f"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".86" cy="-.08" r=".9">
+      <stop offset="0" stop-color="#7de3a8" stop-opacity=".30"/>
+      <stop offset=".55" stop-color="#7de3a8" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#7de3a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cellGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7de3a8"/>
+      <stop offset="1" stop-color="#3b9b6a"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7de3a8"/>
+      <stop offset="1" stop-color="#7de3a8" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#ffffff" stroke-opacity=".035" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="boardGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7de3a8" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#7de3a8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#halo)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+
+  <circle cx="1010" cy="108" r="286" fill="none" stroke="#7de3a8" stroke-opacity=".09" stroke-width="1.5"/>
+  <circle cx="1010" cy="108" r="204" fill="none" stroke="#7de3a8" stroke-opacity=".07" stroke-width="1"/>
+  <circle cx="1010" cy="108" r="126" fill="none" stroke="#7de3a8" stroke-opacity=".05" stroke-width="1"/>
+  <circle cx="600" cy="350" r="300" fill="url(#boardGlow)"/>
+
+  <g><polygon points="769.0,252.0 743.0,297.0 691.0,297.0 665.0,252.0 691.0,207.0 743.0,207.0" fill="#ffffff" fill-opacity=".012" stroke="#ffffff" stroke-opacity=".055" stroke-width="1"/><polygon points="574.0,342.0 548.0,387.0 496.0,387.0 470.0,342.0 496.0,297.0 548.0,297.0" fill="#ffffff" fill-opacity=".012" stroke="#ffffff" stroke-opacity=".055" stroke-width="1"/><polygon points="730.0,342.0 704.0,387.0 652.0,387.0 626.0,342.0 652.0,297.0 704.0,297.0" fill="#ffffff" fill-opacity=".012" stroke="#ffffff" stroke-opacity=".055" stroke-width="1"/><polygon points="613.0,432.0 587.0,477.0 535.0,477.0 509.0,432.0 535.0,387.0 587.0,387.0" fill="#ffffff" fill-opacity=".012" stroke="#ffffff" stroke-opacity=".055" stroke-width="1"/><polygon points="691.0,432.0 665.0,477.0 613.0,477.0 587.0,432.0 613.0,387.0 665.0,387.0" fill="#ffffff" fill-opacity=".012" stroke="#ffffff" stroke-opacity=".055" stroke-width="1"/><polygon points="769.0,432.0 743.0,477.0 691.0,477.0 665.0,432.0 691.0,387.0 743.0,387.0" fill="#ffffff" fill-opacity=".012" stroke="#ffffff" stroke-opacity=".055" stroke-width="1"/>
+        <g>
+          <polygon points="535.0,252.0 509.0,297.0 457.0,297.0 431.0,252.0 457.0,207.0 509.0,207.0" fill="#7de3a8" fill-opacity=".11" stroke="#7de3a8" stroke-opacity=".55" stroke-width="1.4"/>
+          <circle cx="483" cy="252" r="38" fill="#7de3a8" fill-opacity=".08"/>
+          <circle cx="483" cy="252" r="30" fill="url(#cellGrad)" stroke="#ffffff" stroke-opacity=".22"/>
+          <text x="483" y="261" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="25" font-weight="700" fill="#ffffff">阿</text>
+        </g>
+        <g>
+          <polygon points="613.0,252.0 587.0,297.0 535.0,297.0 509.0,252.0 535.0,207.0 587.0,207.0" fill="#7de3a8" fill-opacity=".11" stroke="#7de3a8" stroke-opacity=".55" stroke-width="1.4"/>
+          <circle cx="561" cy="252" r="38" fill="#7de3a8" fill-opacity=".08"/>
+          <circle cx="561" cy="252" r="30" fill="url(#cellGrad)" stroke="#ffffff" stroke-opacity=".22"/>
+          <text x="561" y="261" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="25" font-weight="700" fill="#ffffff">婕</text>
+        </g>
+        <g>
+          <polygon points="691.0,252.0 665.0,297.0 613.0,297.0 587.0,252.0 613.0,207.0 665.0,207.0" fill="#7de3a8" fill-opacity=".11" stroke="#7de3a8" stroke-opacity=".55" stroke-width="1.4"/>
+          <circle cx="639" cy="252" r="38" fill="#7de3a8" fill-opacity=".08"/>
+          <circle cx="639" cy="252" r="30" fill="url(#cellGrad)" stroke="#ffffff" stroke-opacity=".22"/>
+          <text x="639" y="261" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="25" font-weight="700" fill="#ffffff">索</text>
+        </g>
+        <g>
+          <polygon points="496.0,342.0 470.0,387.0 418.0,387.0 392.0,342.0 418.0,297.0 470.0,297.0" fill="#7de3a8" fill-opacity=".11" stroke="#7de3a8" stroke-opacity=".55" stroke-width="1.4"/>
+          <circle cx="444" cy="342" r="38" fill="#7de3a8" fill-opacity=".08"/>
+          <circle cx="444" cy="342" r="30" fill="url(#cellGrad)" stroke="#ffffff" stroke-opacity=".22"/>
+          <text x="444" y="351" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="25" font-weight="700" fill="#ffffff">拉</text>
+        </g>
+        <g>
+          <polygon points="652.0,342.0 626.0,387.0 574.0,387.0 548.0,342.0 574.0,297.0 626.0,297.0" fill="#7de3a8" fill-opacity=".11" stroke="#7de3a8" stroke-opacity=".55" stroke-width="1.4"/>
+          <circle cx="600" cy="342" r="38" fill="#7de3a8" fill-opacity=".08"/>
+          <circle cx="600" cy="342" r="30" fill="url(#cellGrad)" stroke="#ffffff" stroke-opacity=".22"/>
+          <text x="600" y="351" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="25" font-weight="700" fill="#ffffff">费</text>
+        </g>
+        <g>
+          <polygon points="808.0,342.0 782.0,387.0 730.0,387.0 704.0,342.0 730.0,297.0 782.0,297.0" fill="#7de3a8" fill-opacity=".11" stroke="#7de3a8" stroke-opacity=".55" stroke-width="1.4"/>
+          <circle cx="756" cy="342" r="38" fill="#7de3a8" fill-opacity=".08"/>
+          <circle cx="756" cy="342" r="30" fill="url(#cellGrad)" stroke="#ffffff" stroke-opacity=".22"/>
+          <text x="756" y="351" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="25" font-weight="700" fill="#ffffff">提</text>
+        </g>
+        <g>
+          <polygon points="535.0,432.0 509.0,477.0 457.0,477.0 431.0,432.0 457.0,387.0 509.0,387.0" fill="#7de3a8" fill-opacity=".11" stroke="#7de3a8" stroke-opacity=".55" stroke-width="1.4"/>
+          <circle cx="483" cy="432" r="38" fill="#7de3a8" fill-opacity=".08"/>
+          <circle cx="483" cy="432" r="30" fill="url(#cellGrad)" stroke="#ffffff" stroke-opacity=".22"/>
+          <text x="483" y="441" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="25" font-weight="700" fill="#ffffff">维</text>
+        </g></g>
+
+  <path d="M48 116V64h52" fill="none" stroke="#7de3a8" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M1152 116V64h-52" fill="none" stroke="#7de3a8" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M48 552v52h52" fill="none" stroke="#7de3a8" stroke-opacity=".3" stroke-width="2"/>
+  <path d="M1152 552v52h-52" fill="none" stroke="#7de3a8" stroke-opacity=".3" stroke-width="2"/>
+
+  <rect x="48" y="588" width="56" height="3" rx="1.5" fill="#7de3a8"/>
+  <text x="48" y="624" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="20" letter-spacing="2.5" fill="#b8c3d4">DEMO · 阵容构成示意</text>
+  <text x="50" y="650" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="13" letter-spacing="1.2" fill="#6d7a90">替换：assets/img/teams/comp-16313.svg</text>
+  <text x="1152" y="628" text-anchor="end" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="13" letter-spacing="2" fill="#6d7a90">TEAM 23 / 27</text>
+  <path d="M48 606h1104" stroke="url(#lineGrad)" stroke-opacity=".2"/>
+</svg>

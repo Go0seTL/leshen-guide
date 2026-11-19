@@ -1,0 +1,1353 @@
+{
+  "teams": [
+    {
+      "id": "comp-16336",
+      "name": "7峡谷魔沼蛙",
+      "accent1": "#f5c451",
+      "accent2": "#ff8a4c",
+      "champions": [
+        "魔沼蛙",
+        "塔里克",
+        "苍蓝雕纹魔像",
+        "瑟提",
+        "绯红印记树怪",
+        "远古石甲虫",
+        "峡谷迅捷蟹",
+        "暗影狼",
+        "苍蓝哨戒"
+      ]
+    },
+    {
+      "id": "comp-16223",
+      "name": "日蚀骑士韦鲁斯",
+      "accent1": "#f5c451",
+      "accent2": "#ff8a4c",
+      "champions": [
+        "韦鲁斯",
+        "厄斐琉斯",
+        "黛安娜",
+        "瑟庄妮",
+        "慎",
+        "凯尔",
+        "蕾欧娜",
+        "洛"
+      ]
+    },
+    {
+      "id": "comp-16314",
+      "name": "峡谷野怪峰喙鸟",
+      "accent1": "#f5c451",
+      "accent2": "#ff8a4c",
+      "champions": [
+        "深红锋喙鸟",
+        "纳尔",
+        "塔里克",
+        "苍蓝雕纹魔像",
+        "远古石甲虫",
+        "峡谷迅捷蟹",
+        "魔沼蛙",
+        "苍蓝哨戒",
+        "绯红树怪"
+      ]
+    },
+    {
+      "id": "comp-16312",
+      "name": "四狂战狼人",
+      "accent1": "#f5c451",
+      "accent2": "#ff8a4c",
+      "champions": [
+        "沃里克",
+        "苍蓝雕纹魔像",
+        "绯红印记树怪",
+        "黛安娜",
+        "阿利斯塔",
+        "暗影狼",
+        "雷克塞"
+      ]
+    },
+    {
+      "id": "comp-16279",
+      "name": "永恒之森厄斐琉斯",
+      "accent1": "#a78bfa",
+      "accent2": "#6d5bd0",
+      "champions": [
+        "厄斐琉斯",
+        "纳尔",
+        "拉露恩",
+        "莉莉娅",
+        "伊泽瑞尔",
+        "阿利斯塔",
+        "奥恩",
+        "霞"
+      ]
+    },
+    {
+      "id": "comp-16242",
+      "name": "远古巨龙拉露恩95",
+      "accent1": "#a78bfa",
+      "accent2": "#6d5bd0",
+      "champions": [
+        "远古巨龙",
+        "塔里克",
+        "纳尔",
+        "拉露恩",
+        "苍蓝雕纹魔像",
+        "赫卡里姆",
+        "黛安娜",
+        "阿利斯塔"
+      ]
+    },
+    {
+      "id": "comp-16328",
+      "name": "6法拉克丝",
+      "accent1": "#a78bfa",
+      "accent2": "#6d5bd0",
+      "champions": [
+        "拉克丝",
+        "纳尔",
+        "拉露恩",
+        "瑟提",
+        "莉莉娅",
+        "阿狸",
+        "费德提克",
+        "卡西奥佩娅",
+        "卡尔玛"
+      ]
+    },
+    {
+      "id": "comp-16241",
+      "name": "远古巨龙德莱文95",
+      "accent1": "#a78bfa",
+      "accent2": "#6d5bd0",
+      "champions": [
+        "远古巨龙",
+        "茂凯",
+        "凯南",
+        "塔里克",
+        "艾翁",
+        "德莱文",
+        "苍蓝雕纹魔像",
+        "阿木木"
+      ]
+    },
+    {
+      "id": "comp-16277",
+      "name": "魔岩巨兽厄斐琉斯",
+      "accent1": "#a78bfa",
+      "accent2": "#6d5bd0",
+      "champions": [
+        "厄斐琉斯",
+        "拉克丝",
+        "墨菲特",
+        "苍蓝雕纹魔像",
+        "婕拉",
+        "黛安娜",
+        "远古石甲虫",
+        "深红锋喙鸟",
+        "雷克塞"
+      ]
+    },
+    {
+      "id": "comp-16235",
+      "name": "灵魂莲华阿狸",
+      "accent1": "#a78bfa",
+      "accent2": "#6d5bd0",
+      "champions": [
+        "阿狸",
+        "纳尔",
+        "艾希",
+        "拉克丝",
+        "瑟提",
+        "希维尔",
+        "蔚",
+        "约里克",
+        "卡尔玛"
+      ]
+    },
+    {
+      "id": "comp-16278",
+      "name": "主宰凯特琳",
+      "accent1": "#4fd1c5",
+      "accent2": "#2b8a9e",
+      "champions": [
+        "凯特琳",
+        "艾希",
+        "苍蓝雕纹魔像",
+        "希维尔",
+        "蔚",
+        "峡谷迅捷蟹",
+        "瑟庄妮",
+        "洛",
+        "绯红树怪"
+      ]
+    },
+    {
+      "id": "comp-16261",
+      "name": "重装战士凯特琳",
+      "accent1": "#4fd1c5",
+      "accent2": "#2b8a9e",
+      "champions": [
+        "凯特琳",
+        "塔里克",
+        "艾希",
+        "苍蓝雕纹魔像",
+        "希维尔",
+        "蔚",
+        "崔丝塔娜",
+        "伊莉丝",
+        "洛"
+      ]
+    },
+    {
+      "id": "comp-16244",
+      "name": "地狱火希维尔",
+      "accent1": "#4fd1c5",
+      "accent2": "#2b8a9e",
+      "champions": [
+        "希维尔",
+        "凯南",
+        "艾希",
+        "莉莉娅",
+        "阿木木",
+        "蔚",
+        "慎",
+        "韦鲁斯"
+      ]
+    },
+    {
+      "id": "comp-16327",
+      "name": "提莫牛头",
+      "accent1": "#4fd1c5",
+      "accent2": "#2b8a9e",
+      "champions": [
+        "提莫",
+        "苍蓝雕纹魔像",
+        "莫甘娜",
+        "赫卡里姆",
+        "阿利斯塔",
+        "乐芙兰",
+        "可酷伯",
+        "维迦"
+      ]
+    },
+    {
+      "id": "comp-16291",
+      "name": "裁决卡兹克",
+      "accent1": "#4fd1c5",
+      "accent2": "#2b8a9e",
+      "champions": [
+        "卡兹克",
+        "伊泽瑞尔",
+        "厄斐琉斯",
+        "费德提克",
+        "赫卡里姆",
+        "黛安娜",
+        "阿兹尔",
+        "奥恩"
+      ]
+    },
+    {
+      "id": "comp-16234",
+      "name": "召唤师婕拉",
+      "accent1": "#4fd1c5",
+      "accent2": "#2b8a9e",
+      "champions": [
+        "婕拉",
+        "凯南",
+        "墨菲特",
+        "阿木木",
+        "索拉卡",
+        "伊泽瑞尔",
+        "费德提克",
+        "阿兹尔",
+        "约里克"
+      ]
+    },
+    {
+      "id": "comp-16266",
+      "name": "神谕阿狸",
+      "accent1": "#4fd1c5",
+      "accent2": "#2b8a9e",
+      "champions": [
+        "阿狸",
+        "塔里克",
+        "苍蓝雕纹魔像",
+        "瑟提",
+        "莫甘娜",
+        "远古石甲虫",
+        "克格莫",
+        "卡尔玛",
+        "苍蓝哨戒"
+      ]
+    },
+    {
+      "id": "comp-16236",
+      "name": "重装战士厄斐琉斯",
+      "accent1": "#7de3a8",
+      "accent2": "#3b9b6a",
+      "champions": [
+        "厄斐琉斯",
+        "塔里克",
+        "苍蓝雕纹魔像",
+        "绯红印记树怪",
+        "婕拉",
+        "赫卡里姆",
+        "黛安娜",
+        "深红锋喙鸟"
+      ]
+    },
+    {
+      "id": "comp-16271",
+      "name": "迅捷射手厄斐琉斯",
+      "accent1": "#7de3a8",
+      "accent2": "#3b9b6a",
+      "champions": [
+        "厄斐琉斯",
+        "阿木木",
+        "苍蓝雕纹魔像",
+        "绯红印记树怪",
+        "深红锋喙鸟",
+        "洛",
+        "韦鲁斯",
+        "霞"
+      ]
+    },
+    {
+      "id": "comp-16270",
+      "name": "野兽之灵希维尔",
+      "accent1": "#7de3a8",
+      "accent2": "#3b9b6a",
+      "champions": [
+        "希维尔",
+        "塔里克",
+        "墨菲特",
+        "苍蓝雕纹魔像",
+        "奈德丽",
+        "远古石甲虫",
+        "克格莫",
+        "雷克塞",
+        "绯红树怪"
+      ]
+    },
+    {
+      "id": "comp-16258",
+      "name": "婕拉阿狸",
+      "accent1": "#7de3a8",
+      "accent2": "#3b9b6a",
+      "champions": [
+        "婕拉",
+        "凯南",
+        "墨菲特",
+        "阿木木",
+        "阿狸",
+        "索拉卡",
+        "阿兹尔",
+        "约里克"
+      ]
+    },
+    {
+      "id": "comp-16288",
+      "name": "主宰婕拉",
+      "accent1": "#7de3a8",
+      "accent2": "#3b9b6a",
+      "champions": [
+        "婕拉",
+        "茂凯",
+        "凯南",
+        "阿木木",
+        "奈德丽",
+        "蔚",
+        "瑟庄妮",
+        "约里克",
+        "洛"
+      ]
+    },
+    {
+      "id": "comp-16313",
+      "name": "沙皇龙龟",
+      "accent1": "#7de3a8",
+      "accent2": "#3b9b6a",
+      "champions": [
+        "阿兹尔",
+        "婕拉",
+        "索拉卡",
+        "拉莫斯",
+        "费德提克",
+        "提莫",
+        "维迦"
+      ]
+    },
+    {
+      "id": "comp-16218",
+      "name": "黑荆棘维迦",
+      "accent1": "#9aa7ba",
+      "accent2": "#5c6a80",
+      "champions": [
+        "维迦",
+        "纳尔",
+        "拉莫斯",
+        "费德提克",
+        "远古石甲虫",
+        "提莫",
+        "雷克塞",
+        "可酷伯"
+      ]
+    },
+    {
+      "id": "comp-16253",
+      "name": "魔战士易",
+      "accent1": "#9aa7ba",
+      "accent2": "#5c6a80",
+      "champions": [
+        "易",
+        "纳尔",
+        "瑟提",
+        "奈德丽",
+        "蔚",
+        "远古石甲虫",
+        "克格莫",
+        "约里克"
+      ]
+    },
+    {
+      "id": "comp-16260",
+      "name": "世纪和解卡兹克",
+      "accent1": "#9aa7ba",
+      "accent2": "#5c6a80",
+      "champions": [
+        "卡兹克",
+        "塔里克",
+        "厄斐琉斯",
+        "苍蓝雕纹魔像",
+        "赫卡里姆",
+        "雷恩加尔",
+        "黛安娜"
+      ]
+    },
+    {
+      "id": "comp-16230",
+      "name": "花仙子小炮",
+      "accent1": "#9aa7ba",
+      "accent2": "#5c6a80",
+      "champions": [
+        "崔丝塔娜",
+        "纳尔",
+        "莉莉娅",
+        "希维尔",
+        "拉莫斯",
+        "蔚",
+        "阿利斯塔",
+        "洛",
+        "霞"
+      ]
+    }
+  ],
+  "hexes": [
+    {
+      "id": "aug-missedconnections-1",
+      "name": "别再错过",
+      "rarity": "银",
+      "glyph": "别"
+    },
+    {
+      "id": "aug-rollingfordays-1",
+      "name": "嘀个痛快！ I",
+      "rarity": "银",
+      "glyph": "嘀"
+    },
+    {
+      "id": "aug-da-18-solartraitaugment-1",
+      "name": "太阳的抉择",
+      "rarity": "银",
+      "glyph": "太"
+    },
+    {
+      "id": "aug-silverdestiny-1",
+      "name": "白银命运++",
+      "rarity": "银",
+      "glyph": "白"
+    },
+    {
+      "id": "aug-da-verticalityi-1",
+      "name": "纵深 I",
+      "rarity": "银",
+      "glyph": "纵"
+    },
+    {
+      "id": "aug-da-capitalgainsi-1",
+      "name": "资本利得 I",
+      "rarity": "银",
+      "glyph": "资"
+    },
+    {
+      "id": "aug-ascension-1",
+      "name": "部分飞升",
+      "rarity": "银",
+      "glyph": "部"
+    },
+    {
+      "id": "aug-slice-of-life-1",
+      "name": "人生切片",
+      "rarity": "银",
+      "glyph": "人"
+    },
+    {
+      "id": "aug-twinguardians-1",
+      "name": "双子守护神",
+      "rarity": "银",
+      "glyph": "双"
+    },
+    {
+      "id": "aug-buildinganarmy-1",
+      "name": "团队建设",
+      "rarity": "银",
+      "glyph": "团"
+    },
+    {
+      "id": "aug-smallgrabbag-1",
+      "name": "小小福袋",
+      "rarity": "银",
+      "glyph": "小"
+    },
+    {
+      "id": "aug-da-champdelivery-1",
+      "name": "弈子配送",
+      "rarity": "银",
+      "glyph": "弈"
+    },
+    {
+      "id": "aug-da-champdeliveryplus-1",
+      "name": "弈子配送+",
+      "rarity": "银",
+      "glyph": "弈"
+    },
+    {
+      "id": "aug-kingslayer-1",
+      "name": "弑君突刺",
+      "rarity": "银",
+      "glyph": "弑"
+    },
+    {
+      "id": "aug-recurvewrecker-1",
+      "name": "战时补给：反曲之弓",
+      "rarity": "银",
+      "glyph": "战"
+    },
+    {
+      "id": "aug-extrabuckles-1",
+      "name": "战时补给：巨人腰带",
+      "rarity": "银",
+      "glyph": "战"
+    },
+    {
+      "id": "aug-caretaker-schosen-1",
+      "name": "游神的盟友",
+      "rarity": "银",
+      "glyph": "游"
+    },
+    {
+      "id": "aug-missing-t1",
+      "name": "锻造挚友",
+      "rarity": "银",
+      "glyph": "锻"
+    },
+    {
+      "id": "aug-silverdestiny-1-2",
+      "name": "白银命运",
+      "rarity": "银",
+      "glyph": "白"
+    },
+    {
+      "id": "aug-standunited-1",
+      "name": "并肩作战 I",
+      "rarity": "银",
+      "glyph": "并"
+    },
+    {
+      "id": "aug-branchingout-1",
+      "name": "节外生枝+",
+      "rarity": "银",
+      "glyph": "节"
+    },
+    {
+      "id": "aug-slightlymagicroll-1",
+      "name": "轻量魔法投掷",
+      "rarity": "银",
+      "glyph": "轻"
+    },
+    {
+      "id": "aug-silverspoon-1",
+      "name": "银汤匙",
+      "rarity": "银",
+      "glyph": "银"
+    },
+    {
+      "id": "aug-thetower-1",
+      "name": "高塔",
+      "rarity": "银",
+      "glyph": "高"
+    },
+    {
+      "id": "aug-da-18-lunartraitaugmentplus-2",
+      "name": "日月同辉+",
+      "rarity": "金",
+      "glyph": "日"
+    },
+    {
+      "id": "aug-da-18-riftbeasttraitaugment-2",
+      "name": "欧米茄之怪",
+      "rarity": "金",
+      "glyph": "欧"
+    },
+    {
+      "id": "aug-earlylearning-2",
+      "name": "宝宝学院",
+      "rarity": "金",
+      "glyph": "宝"
+    },
+    {
+      "id": "aug-warpath-2",
+      "name": "征战之路",
+      "rarity": "金",
+      "glyph": "征"
+    },
+    {
+      "id": "aug-ascension-2",
+      "name": "飞升",
+      "rarity": "金",
+      "glyph": "飞"
+    },
+    {
+      "id": "aug-da-verticalityii-2",
+      "name": "纵深 II",
+      "rarity": "金",
+      "glyph": "纵"
+    },
+    {
+      "id": "aug-918993",
+      "name": "金色炊具",
+      "rarity": "金",
+      "glyph": "金"
+    },
+    {
+      "id": "aug-da-18-coventraitaugment-2",
+      "name": "女巫使魔",
+      "rarity": "金",
+      "glyph": "女"
+    },
+    {
+      "id": "aug-da-blackthorntraitaugment-2",
+      "name": "装备提炼",
+      "rarity": "金",
+      "glyph": "装"
+    },
+    {
+      "id": "aug-epicrolldown-2",
+      "name": "8级D干的传说",
+      "rarity": "金",
+      "glyph": "8"
+    },
+    {
+      "id": "aug-trade-2",
+      "name": "嘀嘀街区",
+      "rarity": "金",
+      "glyph": "嘀"
+    },
+    {
+      "id": "aug-portableforge-2",
+      "name": "便携锻炉",
+      "rarity": "金",
+      "glyph": "便"
+    },
+    {
+      "id": "aug-frontlinefoundation-2",
+      "name": "前线地基",
+      "rarity": "金",
+      "glyph": "前"
+    },
+    {
+      "id": "aug-swordsmith-2",
+      "name": "剑之工匠",
+      "rarity": "金",
+      "glyph": "剑"
+    },
+    {
+      "id": "aug-rodsmith-2",
+      "name": "杖之工匠",
+      "rarity": "金",
+      "glyph": "杖"
+    },
+    {
+      "id": "aug-soloplate-2",
+      "name": "单身板甲",
+      "rarity": "金",
+      "glyph": "单"
+    },
+    {
+      "id": "aug-grabbag-2",
+      "name": "大百宝袋",
+      "rarity": "金",
+      "glyph": "大"
+    },
+    {
+      "id": "aug-boosterpack1-2",
+      "name": "扩展包++",
+      "rarity": "金",
+      "glyph": "扩"
+    },
+    {
+      "id": "aug-investmentstrategy-2",
+      "name": "投资策略 I",
+      "rarity": "金",
+      "glyph": "投"
+    },
+    {
+      "id": "aug-918019",
+      "name": "挑战者的优雅",
+      "rarity": "金",
+      "glyph": "挑"
+    },
+    {
+      "id": "aug-spiritofredemption-2",
+      "name": "救赎盔甲",
+      "rarity": "金",
+      "glyph": "救"
+    },
+    {
+      "id": "aug-timeskip-2",
+      "name": "时间跳跃",
+      "rarity": "金",
+      "glyph": "时"
+    },
+    {
+      "id": "aug-caretaker-schosen-2",
+      "name": "游神的眷顾",
+      "rarity": "金",
+      "glyph": "游"
+    },
+    {
+      "id": "aug-pandora-2",
+      "name": "潘朵拉的装备 II",
+      "rarity": "金",
+      "glyph": "潘"
+    },
+    {
+      "id": "aug-seraphimsstaff-2",
+      "name": "炽天使之拥",
+      "rarity": "金",
+      "glyph": "炽"
+    },
+    {
+      "id": "aug-explosivegrowth-2",
+      "name": "爆炸式增长+",
+      "rarity": "金",
+      "glyph": "爆"
+    },
+    {
+      "id": "aug-sololeveling-2",
+      "name": "独自升级",
+      "rarity": "金",
+      "glyph": "独"
+    },
+    {
+      "id": "aug-dizzy-2",
+      "name": "纷乱头脑",
+      "rarity": "金",
+      "glyph": "纷"
+    },
+    {
+      "id": "aug-hyperroll-2",
+      "name": "花到上头",
+      "rarity": "金",
+      "glyph": "花"
+    },
+    {
+      "id": "aug-heroicgrabbag-2",
+      "name": "英勇福袋++",
+      "rarity": "金",
+      "glyph": "英"
+    },
+    {
+      "id": "aug-spreadingroots-2",
+      "name": "蔓延之根+",
+      "rarity": "金",
+      "glyph": "蔓"
+    },
+    {
+      "id": "aug-advancedloan-2",
+      "name": "高级贷款+",
+      "rarity": "金",
+      "glyph": "高"
+    },
+    {
+      "id": "aug-buriedtreasures-3",
+      "name": "珍藏财宝",
+      "rarity": "棱彩",
+      "glyph": "珍"
+    },
+    {
+      "id": "aug-awakenedsoul-3",
+      "name": "灵魂唤醒",
+      "rarity": "棱彩",
+      "glyph": "灵"
+    },
+    {
+      "id": "aug-retribution-3",
+      "name": "正义报复",
+      "rarity": "棱彩",
+      "glyph": "正"
+    },
+    {
+      "id": "aug-da-verticalityiii-3",
+      "name": "纵深 III",
+      "rarity": "棱彩",
+      "glyph": "纵"
+    },
+    {
+      "id": "aug-thetraittree-3",
+      "name": "羁绊树+",
+      "rarity": "棱彩",
+      "glyph": "羁"
+    },
+    {
+      "id": "aug-trade-3",
+      "name": "贸易中心",
+      "rarity": "棱彩",
+      "glyph": "贸"
+    },
+    {
+      "id": "aug-shimmerscaleessence-3",
+      "name": "金鳞精粹",
+      "rarity": "棱彩",
+      "glyph": "金"
+    },
+    {
+      "id": "aug-33024",
+      "name": "创世神",
+      "rarity": "棱彩",
+      "glyph": "创"
+    },
+    {
+      "id": "aug-coronation-3",
+      "name": "加冕礼",
+      "rarity": "棱彩",
+      "glyph": "加"
+    },
+    {
+      "id": "aug-minmax-3",
+      "name": "可大可小",
+      "rarity": "棱彩",
+      "glyph": "可"
+    },
+    {
+      "id": "aug-da-componentquest-3",
+      "name": "基础装备大冒险",
+      "rarity": "棱彩",
+      "glyph": "基"
+    },
+    {
+      "id": "aug-deadliercaps-3-tft-set15",
+      "name": "更要命的帽子",
+      "rarity": "棱彩",
+      "glyph": "更"
+    },
+    {
+      "id": "aug-investmentstrategy-3",
+      "name": "投资策略 II",
+      "rarity": "棱彩",
+      "glyph": "投"
+    },
+    {
+      "id": "aug-prismaticdestiny-3",
+      "name": "棱彩命运",
+      "rarity": "棱彩",
+      "glyph": "棱"
+    },
+    {
+      "id": "aug-prismaticdestiny-3-2",
+      "name": "棱彩命运+",
+      "rarity": "棱彩",
+      "glyph": "棱"
+    },
+    {
+      "id": "aug-calltochaos-3",
+      "name": "混沌召唤",
+      "rarity": "棱彩",
+      "glyph": "混"
+    },
+    {
+      "id": "aug-thebaronslair-3",
+      "name": "男爵幻域",
+      "rarity": "棱彩",
+      "glyph": "男"
+    },
+    {
+      "id": "aug-tonsofstats-3",
+      "name": "成吨的属性！",
+      "rarity": "棱彩",
+      "glyph": "成"
+    },
+    {
+      "id": "aug-cursedcrown-3",
+      "name": "诅咒冠冕",
+      "rarity": "棱彩",
+      "glyph": "诅"
+    },
+    {
+      "id": "aug-tacticianskitchen-3",
+      "name": "锅铲厨房",
+      "rarity": "棱彩",
+      "glyph": "锅"
+    }
+  ],
+  "items": [
+    {
+      "id": "infinity-edge",
+      "name": "无尽之刃",
+      "category": "normal",
+      "glyph": "无",
+      "accent1": "#f5c451",
+      "accent2": "#d99a26"
+    },
+    {
+      "id": "spear-of-shojin",
+      "name": "朔极之矛",
+      "category": "normal",
+      "glyph": "朔",
+      "accent1": "#6fc3ff",
+      "accent2": "#3478c8"
+    },
+    {
+      "id": "jeweled-gauntlet",
+      "name": "珠光护手",
+      "category": "normal",
+      "glyph": "珠",
+      "accent1": "#c09cff",
+      "accent2": "#7a5bd0"
+    },
+    {
+      "id": "last-whisper",
+      "name": "最后的轻语",
+      "category": "normal",
+      "glyph": "最",
+      "accent1": "#7de3c3",
+      "accent2": "#2b8a7a"
+    },
+    {
+      "id": "warmogs",
+      "name": "狂徒铠甲",
+      "category": "normal",
+      "glyph": "狂",
+      "accent1": "#ff9d6c",
+      "accent2": "#d05a3b"
+    },
+    {
+      "id": "gargoyle",
+      "name": "石像鬼石板甲",
+      "category": "normal",
+      "glyph": "石",
+      "accent1": "#8ecae6",
+      "accent2": "#4a90a4"
+    },
+    {
+      "id": "blue-buff",
+      "name": "蓝霸符",
+      "category": "normal",
+      "glyph": "蓝",
+      "accent1": "#63b3ff",
+      "accent2": "#2f6dd0"
+    },
+    {
+      "id": "guinsoo",
+      "name": "鬼索的狂暴之刃",
+      "category": "normal",
+      "glyph": "鬼",
+      "accent1": "#f5a3ff",
+      "accent2": "#b05ac8"
+    },
+    {
+      "id": "item-1539",
+      "name": "光明版鬼索的狂暴之刃",
+      "category": "radiant",
+      "glyph": "鬼",
+      "accent1": "#ffe08a",
+      "accent2": "#e2a72f"
+    },
+    {
+      "id": "item-31011",
+      "name": "光明版海妖之怒",
+      "category": "radiant",
+      "glyph": "海",
+      "accent1": "#ffd166",
+      "accent2": "#c58a1f"
+    },
+    {
+      "id": "item-1577",
+      "name": "光明版正义之手",
+      "category": "radiant",
+      "glyph": "正",
+      "accent1": "#f5c451",
+      "accent2": "#d99a26"
+    },
+    {
+      "id": "item-1521",
+      "name": "光明版巨人捕手",
+      "category": "radiant",
+      "glyph": "巨",
+      "accent1": "#ffe08a",
+      "accent2": "#e2a72f"
+    },
+    {
+      "id": "item-1519",
+      "name": "光明版锐利之刃",
+      "category": "radiant",
+      "glyph": "锐",
+      "accent1": "#ffd166",
+      "accent2": "#c58a1f"
+    },
+    {
+      "id": "item-1535",
+      "name": "光明版无尽之刃",
+      "category": "radiant",
+      "glyph": "无",
+      "accent1": "#f5c451",
+      "accent2": "#d99a26"
+    },
+    {
+      "id": "item-1553",
+      "name": "光明版班克斯的魔法帽",
+      "category": "radiant",
+      "glyph": "班",
+      "accent1": "#ffe08a",
+      "accent2": "#e2a72f"
+    },
+    {
+      "id": "item-1555",
+      "name": "光明版大天使之杖",
+      "category": "radiant",
+      "glyph": "大",
+      "accent1": "#ffd166",
+      "accent2": "#c58a1f"
+    },
+    {
+      "id": "item-1624",
+      "name": "光明版红霸符",
+      "category": "radiant",
+      "glyph": "红",
+      "accent1": "#f5c451",
+      "accent2": "#d99a26"
+    },
+    {
+      "id": "item-1618",
+      "name": "光明版斯特拉克的挑战护手",
+      "category": "radiant",
+      "glyph": "斯",
+      "accent1": "#ffe08a",
+      "accent2": "#e2a72f"
+    },
+    {
+      "id": "item-1551",
+      "name": "光明版最后的轻语",
+      "category": "radiant",
+      "glyph": "最",
+      "accent1": "#ffd166",
+      "accent2": "#c58a1f"
+    },
+    {
+      "id": "item-1617",
+      "name": "光明版强袭者的链枷",
+      "category": "radiant",
+      "glyph": "强",
+      "accent1": "#f5c451",
+      "accent2": "#d99a26"
+    },
+    {
+      "id": "item-1595",
+      "name": "光明版水银",
+      "category": "radiant",
+      "glyph": "水",
+      "accent1": "#ffe08a",
+      "accent2": "#e2a72f"
+    },
+    {
+      "id": "item-1621",
+      "name": "光明版适应性头盔",
+      "category": "radiant",
+      "glyph": "适",
+      "accent1": "#ffd166",
+      "accent2": "#c58a1f"
+    },
+    {
+      "id": "item-1527",
+      "name": "光明版夜之锋刃",
+      "category": "radiant",
+      "glyph": "夜",
+      "accent1": "#f5c451",
+      "accent2": "#d99a26"
+    },
+    {
+      "id": "item-1581",
+      "name": "光明版石像鬼石板甲",
+      "category": "radiant",
+      "glyph": "石",
+      "accent1": "#ffe08a",
+      "accent2": "#e2a72f"
+    },
+    {
+      "id": "item-1597",
+      "name": "光明版狂徒铠甲",
+      "category": "radiant",
+      "glyph": "狂",
+      "accent1": "#ffd166",
+      "accent2": "#c58a1f"
+    },
+    {
+      "id": "item-1543",
+      "name": "光明版泰坦的坚决",
+      "category": "radiant",
+      "glyph": "泰",
+      "accent1": "#f5c451",
+      "accent2": "#d99a26"
+    },
+    {
+      "id": "item-1565",
+      "name": "光明版珠光护手",
+      "category": "radiant",
+      "glyph": "珠",
+      "accent1": "#ffe08a",
+      "accent2": "#e2a72f"
+    },
+    {
+      "id": "item-1607",
+      "name": "光明版秘法手套",
+      "category": "radiant",
+      "glyph": "秘",
+      "accent1": "#ffd166",
+      "accent2": "#c58a1f"
+    },
+    {
+      "id": "item-20101",
+      "name": "投机者之刃",
+      "category": "ornn",
+      "glyph": "投",
+      "accent1": "#ffb36b",
+      "accent2": "#d9632f"
+    },
+    {
+      "id": "item-30013",
+      "name": "暗行者之爪",
+      "category": "ornn",
+      "glyph": "暗",
+      "accent1": "#ff8f6b",
+      "accent2": "#b93f3f"
+    },
+    {
+      "id": "item-20044",
+      "name": "黎明核心",
+      "category": "ornn",
+      "glyph": "黎",
+      "accent1": "#ffd98a",
+      "accent2": "#c98b2f"
+    },
+    {
+      "id": "item-31004",
+      "name": "烁刃",
+      "category": "ornn",
+      "glyph": "烁",
+      "accent1": "#ffb36b",
+      "accent2": "#d9632f"
+    },
+    {
+      "id": "item-20011",
+      "name": "碎舰者",
+      "category": "ornn",
+      "glyph": "碎",
+      "accent1": "#ff8f6b",
+      "accent2": "#b93f3f"
+    },
+    {
+      "id": "item-30019",
+      "name": "巫妖之祸",
+      "category": "ornn",
+      "glyph": "巫",
+      "accent1": "#ffd98a",
+      "accent2": "#c98b2f"
+    },
+    {
+      "id": "item-20003",
+      "name": "魔蕴",
+      "category": "ornn",
+      "glyph": "魔",
+      "accent1": "#ffb36b",
+      "accent2": "#d9632f"
+    },
+    {
+      "id": "item-30020",
+      "name": "光盾徽章",
+      "category": "ornn",
+      "glyph": "光",
+      "accent1": "#ff8f6b",
+      "accent2": "#b93f3f"
+    },
+    {
+      "id": "item-20009",
+      "name": "金币收集者",
+      "category": "ornn",
+      "glyph": "金",
+      "accent1": "#ffd98a",
+      "accent2": "#c98b2f"
+    },
+    {
+      "id": "item-20017",
+      "name": "大亨之铠",
+      "category": "ornn",
+      "glyph": "大",
+      "accent1": "#ffb36b",
+      "accent2": "#d9632f"
+    },
+    {
+      "id": "item-30017",
+      "name": "智慧末刃",
+      "category": "ornn",
+      "glyph": "智",
+      "accent1": "#ff8f6b",
+      "accent2": "#b93f3f"
+    },
+    {
+      "id": "item-32351",
+      "name": "永恒契约",
+      "category": "ornn",
+      "glyph": "永",
+      "accent1": "#ffd98a",
+      "accent2": "#c98b2f"
+    },
+    {
+      "id": "item-30011",
+      "name": "卢登的激荡",
+      "category": "ornn",
+      "glyph": "卢",
+      "accent1": "#ffb36b",
+      "accent2": "#d9632f"
+    },
+    {
+      "id": "item-30021",
+      "name": "探索者的护臂",
+      "category": "ornn",
+      "glyph": "探",
+      "accent1": "#ff8f6b",
+      "accent2": "#b93f3f"
+    },
+    {
+      "id": "item-31005",
+      "name": "斯塔缇克电刃",
+      "category": "ornn",
+      "glyph": "斯",
+      "accent1": "#ffd98a",
+      "accent2": "#c98b2f"
+    },
+    {
+      "id": "item-31007",
+      "name": "顽强不屈",
+      "category": "ornn",
+      "glyph": "顽",
+      "accent1": "#ffb36b",
+      "accent2": "#d9632f"
+    },
+    {
+      "id": "item-20002",
+      "name": "死亡之蔑",
+      "category": "ornn",
+      "glyph": "死",
+      "accent1": "#ff8f6b",
+      "accent2": "#b93f3f"
+    },
+    {
+      "id": "item-33039",
+      "name": "主宰纹章",
+      "category": "emblem",
+      "glyph": "主",
+      "accent1": "#c9b6ff",
+      "accent2": "#7c5cf0"
+    },
+    {
+      "id": "item-33030",
+      "name": "迅捷射手纹章",
+      "category": "emblem",
+      "glyph": "迅",
+      "accent1": "#d8b8ff",
+      "accent2": "#8a5fd6"
+    },
+    {
+      "id": "item-33032",
+      "name": "重装战士纹章",
+      "category": "emblem",
+      "glyph": "重",
+      "accent1": "#a8c8ff",
+      "accent2": "#537fe0"
+    },
+    {
+      "id": "item-33028",
+      "name": "斗士纹章",
+      "category": "emblem",
+      "glyph": "斗",
+      "accent1": "#c9b6ff",
+      "accent2": "#7c5cf0"
+    },
+    {
+      "id": "item-33020",
+      "name": "月蚀骑士纹章",
+      "category": "emblem",
+      "glyph": "月",
+      "accent1": "#d8b8ff",
+      "accent2": "#8a5fd6"
+    },
+    {
+      "id": "item-33024",
+      "name": "永恒之森纹章",
+      "category": "emblem",
+      "glyph": "永",
+      "accent1": "#a8c8ff",
+      "accent2": "#537fe0"
+    },
+    {
+      "id": "item-33033",
+      "name": "猎人纹章",
+      "category": "emblem",
+      "glyph": "猎",
+      "accent1": "#c9b6ff",
+      "accent2": "#7c5cf0"
+    },
+    {
+      "id": "item-33023",
+      "name": "地狱火纹章",
+      "category": "emblem",
+      "glyph": "地",
+      "accent1": "#d8b8ff",
+      "accent2": "#8a5fd6"
+    },
+    {
+      "id": "item-33027",
+      "name": "裁决使纹章",
+      "category": "emblem",
+      "glyph": "裁",
+      "accent1": "#a8c8ff",
+      "accent2": "#537fe0"
+    },
+    {
+      "id": "item-33034",
+      "name": "狂战士纹章",
+      "category": "emblem",
+      "glyph": "狂",
+      "accent1": "#c9b6ff",
+      "accent2": "#7c5cf0"
+    },
+    {
+      "id": "item-33038",
+      "name": "护卫纹章",
+      "category": "emblem",
+      "glyph": "护",
+      "accent1": "#d8b8ff",
+      "accent2": "#8a5fd6"
+    }
+  ]
+}

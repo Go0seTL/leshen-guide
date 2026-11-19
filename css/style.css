@@ -22,6 +22,8 @@
   --tier-s: #ffd166;
   --tier-a: #b69cff;
   --tier-b: #67b7ff;
+  --tier-c: #7de3a8;
+  --tier-d: #9aa7ba;
   --radius-lg: 26px;
   --radius: 18px;
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
@@ -735,7 +737,31 @@ body.menu-open .mobile-nav a:nth-child(5) { transition-delay: 0.25s; }
   background: currentColor;
 }
 
-.swipe-hint {
+.source-line {
+  margin: -10px 0 22px;
+  color: var(--muted-2);
+  font-size: 0.72rem;
+  line-height: 1.7;
+}
+
+.source-line a,
+.footer-source a {
+  color: var(--gold);
+  border-bottom: 1px solid rgba(245, 196, 81, 0.25);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.source-line a:hover,
+.footer-source a:hover {
+  color: var(--gold-2);
+  border-color: var(--gold);
+}
+
+.footer-source {
+  margin-top: -2px !important;
+}
+
+.tier-legend > .swipe-hint {
   display: none;
 }
 
@@ -1742,6 +1768,8 @@ body.menu-open .mobile-nav a:nth-child(5) { transition-delay: 0.25s; }
 .legend-dot.tier-s { background: var(--tier-s); box-shadow: 0 0 8px rgba(255, 209, 102, 0.65); }
 .legend-dot.tier-a { background: var(--tier-a); box-shadow: 0 0 8px rgba(182, 156, 255, 0.6); }
 .legend-dot.tier-b { background: var(--tier-b); box-shadow: 0 0 8px rgba(103, 183, 255, 0.6); }
+.legend-dot.tier-c { background: var(--tier-c); box-shadow: 0 0 8px rgba(125, 227, 168, 0.55); }
+.legend-dot.tier-d { background: var(--tier-d); box-shadow: 0 0 8px rgba(154, 167, 186, 0.45); }
 
 .tier-list {
   display: flex;
@@ -1781,6 +1809,8 @@ body.menu-open .mobile-nav a:nth-child(5) { transition-delay: 0.25s; }
 .tier-row.tier-s-row { --tier-color: var(--tier-s); }
 .tier-row.tier-a-row { --tier-color: var(--tier-a); }
 .tier-row.tier-b-row { --tier-color: var(--tier-b); }
+.tier-row.tier-c-row { --tier-color: var(--tier-c); }
+.tier-row.tier-d-row { --tier-color: var(--tier-d); }
 
 .tier-row:hover {
   border-color: rgba(255, 255, 255, 0.13);
@@ -1941,6 +1971,8 @@ body.menu-open .mobile-nav a:nth-child(5) { transition-delay: 0.25s; }
 .tier-badge.tier-s { color: var(--tier-s); box-shadow: 0 0 20px rgba(255, 209, 102, 0.12); }
 .tier-badge.tier-a { color: var(--tier-a); box-shadow: 0 0 20px rgba(182, 156, 255, 0.12); }
 .tier-badge.tier-b { color: var(--tier-b); box-shadow: 0 0 20px rgba(103, 183, 255, 0.12); }
+.tier-badge.tier-c { color: var(--tier-c); box-shadow: 0 0 20px rgba(125, 227, 168, 0.1); }
+.tier-badge.tier-d { color: var(--tier-d); box-shadow: 0 0 20px rgba(154, 167, 186, 0.1); }
 
 .team-media .tier-badge {
   position: absolute;
@@ -2297,6 +2329,8 @@ body.menu-open .mobile-nav a:nth-child(5) { transition-delay: 0.25s; }
 .hex-tier.tier-s { color: var(--tier-s); }
 .hex-tier.tier-a { color: var(--tier-a); }
 .hex-tier.tier-b { color: var(--tier-b); }
+.hex-tier.tier-c { color: var(--tier-c); }
+.hex-tier.tier-d { color: var(--tier-d); }
 
 /* ============================ 装备排行 ============================ */
 
@@ -2447,6 +2481,29 @@ body.menu-open .mobile-nav a:nth-child(5) { transition-delay: 0.25s; }
   font-weight: 800;
   letter-spacing: 0.12em;
 }
+
+.podium-tier {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid currentColor;
+  border-radius: 7px;
+  background: rgba(7, 10, 17, 0.58);
+  font-family: var(--font-num);
+  font-size: 0.68rem;
+  font-weight: 900;
+}
+
+.podium-tier.tier-s { color: var(--tier-s); }
+.podium-tier.tier-a { color: var(--tier-a); }
+.podium-tier.tier-b { color: var(--tier-b); }
+.podium-tier.tier-c { color: var(--tier-c); }
+.podium-tier.tier-d { color: var(--tier-d); }
 
 .podium-rank {
   position: absolute;
@@ -2607,10 +2664,34 @@ body.menu-open .mobile-nav a:nth-child(5) { transition-delay: 0.25s; }
 }
 
 .item-name h4 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
   margin: 0 0 2px;
   font-size: 0.87rem;
   font-weight: 800;
 }
+
+.item-tier {
+  display: inline-grid;
+  place-items: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  font-family: var(--font-num);
+  font-size: 0.56rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.item-tier.tier-s { color: var(--tier-s); }
+.item-tier.tier-a { color: var(--tier-a); }
+.item-tier.tier-b { color: var(--tier-b); }
+.item-tier.tier-c { color: var(--tier-c); }
+.item-tier.tier-d { color: var(--tier-d); }
 
 .item-name small {
   display: block;
@@ -3093,9 +3174,15 @@ body.menu-open .mobile-nav a:nth-child(5) { transition-delay: 0.25s; }
 }
 
 .modal-note::before {
-  content: "博主笔记 · ";
+  content: "阵容说明 · ";
   color: var(--gold);
   font-weight: 800;
+}
+
+.modal-section[hidden],
+.code-box[hidden],
+.modal-note[hidden] {
+  display: none !important;
 }
 
 .code-box {
@@ -3801,7 +3888,7 @@ body.menu-open .mobile-nav a:nth-child(5) { transition-delay: 0.25s; }
     -webkit-line-clamp: 2;
   }
 
-  .swipe-hint {
+  .tier-legend > .swipe-hint {
     display: block;
     width: 100%;
     padding-top: 2px;
@@ -3817,10 +3904,7 @@ body.menu-open .mobile-nav a:nth-child(5) { transition-delay: 0.25s; }
   }
 
   .podium-crown {
-    top: 10px;
-    left: auto;
-    right: 42px;
-    font-size: 0.54rem;
+    display: none;
   }
 
   .podium-rank {

@@ -117,7 +117,7 @@
     </nav>
     <div class="mobile-menu-foot">
       <span class="pulse-dot"></span>
-      <span id="mobileVersion">S15 · 示例版本</span>
+      <span id="mobileVersion">S18 · 18.6</span>
       <span class="dot-sep">·</span>
       <span>持续更新</span>
     </div>
@@ -132,7 +132,7 @@
         <div class="hero-copy">
           <p class="eyebrow hero-eyebrow">
             <span class="pulse-dot"></span>
-            <span id="heroVersion">S15 赛季 · 攻略资料库持续更新</span>
+            <span id="heroVersion">S18 赛季 · 攻略资料库持续更新</span>
           </p>
           <h1>把版本答案，<br><span class="grad-text">讲成你能用的攻略。</span></h1>
           <p class="hero-desc">
@@ -148,15 +148,15 @@
           </div>
           <div class="hero-stats" aria-label="资料库数据">
             <div class="stat">
-              <strong><span data-count="8" id="statTeams">0</span><em>套</em></strong>
+              <strong><span data-count="27" id="statTeams">0</span><em>套</em></strong>
               <span>阵容整理</span>
             </div>
             <div class="stat">
-              <strong><span data-count="10" id="statHexes">0</span><em>枚</em></strong>
+              <strong><span data-count="76" id="statHexes">0</span><em>枚</em></strong>
               <span>海克斯解析</span>
             </div>
             <div class="stat">
-              <strong><span data-count="26" id="statItems">0</span><em>件</em></strong>
+              <strong><span data-count="56" id="statItems">0</span><em>件</em></strong>
               <span>装备排行</span>
             </div>
           </div>
@@ -170,7 +170,7 @@
             <div class="emblem-hex">
               <svg viewBox="0 0 64 64" class="emblem-svg"><use href="#icon-logo"></use></svg>
             </div>
-            <span class="emblem-season">S15</span>
+            <span class="emblem-season" id="emblemSeason">S18</span>
           </div>
           <div class="float-chip chip-tier">
             <span class="chip-icon">S</span>
@@ -222,10 +222,10 @@
           <aside class="intro-side">
             <div class="version-card glass-card reveal" style="--d: 80ms">
               <span class="live-pill"><i></i>当前版本</span>
-              <strong class="version-name" id="currentVersion">S15 · 示例版本</strong>
+              <strong class="version-name" id="currentVersion">S18 · 18.6</strong>
               <p class="version-date">最后更新 <time id="lastUpdated">2026-11-19</time></p>
               <div class="version-meter"><span></span></div>
-              <small>当前为演示内容，替换数据后即可变成你的版本资料库。</small>
+              <small>榜单与版本数据参考公开资料库，图片仍为示例占位图。</small>
             </div>
 
             <nav class="quick-nav glass-card reveal" style="--d: 140ms" aria-label="快速导航">
@@ -282,8 +282,8 @@
         <div class="update-layout">
           <aside class="update-current glass-card reveal">
             <span class="live-pill"><i></i>当前版本</span>
-            <div class="update-version" id="updateVersionBig">S15</div>
-            <p class="update-current-desc">当前资料库基于示例版本整理。替换成你的版本信息后，这里会自动显示最新一条更新。</p>
+            <div class="update-version" id="updateVersionBig">S18</div>
+            <p class="update-current-desc">当前资料库按 datatft S18.6 榜单整理，阵容、海克斯与装备的最近同步记录会显示在右侧。</p>
             <div class="update-meta">
               <span>更新于 <time id="updateDate">2026-11-19</time></span>
               <span id="updateCount">4 条记录</span>
@@ -304,16 +304,19 @@
             <p class="section-kicker"><span>03</span>TEAM TIER LIST</p>
             <h2>阵容排行 <span class="accent">·</span> 先找到版本答案</h2>
           </div>
-          <p class="section-desc">按强度分成 S / A / B 三档，点开卡片可以看到完整阵容、运营节奏、站位思路和阵容码。内容是演示数据，换成你的阵容即可。</p>
+          <p class="section-desc">按 S / A / B / C / D 五档整理，点开卡片可以看到阵容构成、主C和核心装备。榜单数据参考 datatft S18.6，评级仅代表来源观点；图片为示例占位图。</p>
         </header>
 
         <div class="tier-legend reveal">
           <span><i class="legend-dot tier-s"></i>S · 版本答案</span>
-          <span><i class="legend-dot tier-a"></i>A · 稳定上分</span>
-          <span><i class="legend-dot tier-b"></i>B · 环境备选</span>
-          <span class="demo-badge">演示数据</span>
+          <span><i class="legend-dot tier-a"></i>A · 强势上分</span>
+          <span><i class="legend-dot tier-b"></i>B · 可用阵容</span>
+          <span><i class="legend-dot tier-c"></i>C · 特定环境</span>
+          <span><i class="legend-dot tier-d"></i>D · 娱乐备选</span>
+          <span class="demo-badge">S18.6 榜单</span>
           <span class="swipe-hint">← 左右滑动查看全部阵容 →</span>
         </div>
+        <p class="source-line">榜单来源 <a href="https://jcc.datatft.com/comp/rank" target="_blank" rel="noopener">datatft 阵容榜</a> · 数据更新于 2026-11-07，评级仅供参考。</p>
 
         <div class="tier-list" id="teamTierList"></div>
       </div>
@@ -327,7 +330,7 @@
             <p class="section-kicker"><span>04</span>AUGMENT TIER LIST</p>
             <h2>海克斯排行 <span class="accent">·</span> 拿到就知道怎么选</h2>
           </div>
-          <p class="section-desc">按稀有度和版本强度整理，附上一句话使用建议。银、金、棱彩三种品质可以单独筛选。</p>
+          <p class="section-desc">按银 / 金 / 棱彩整理，收录当前榜单的 S / A 档强化，附一句话使用建议。C / D 档暂未收录。</p>
         </header>
 
         <div class="hex-toolbar reveal">
@@ -337,9 +340,10 @@
             <button class="filter-btn" type="button" data-rarity="金" aria-pressed="false"><i class="rarity-dot rarity-gold"></i>金色</button>
             <button class="filter-btn" type="button" data-rarity="棱彩" aria-pressed="false"><i class="rarity-dot rarity-prismatic"></i>棱彩</button>
           </div>
-          <span class="result-count" id="hexCount" aria-live="polite">10 枚强化</span>
+          <span class="result-count" id="hexCount" aria-live="polite">76 枚强化</span>
         </div>
 
+        <p class="source-line">数据参考 <a href="https://jcc.datatft.com/augment/tier" target="_blank" rel="noopener">datatft 强化榜</a> · 评级由 TLG糕手雕妹 提供 · 展示银/金/棱彩 S/A 档。</p>
         <div class="hex-grid" id="hexGrid"></div>
       </div>
     </section>
@@ -352,7 +356,7 @@
             <p class="section-kicker"><span>05</span>ITEM PRIORITY</p>
             <h2>装备排行 <span class="accent">·</span> 把资源花在刀刃上</h2>
           </div>
-          <p class="section-desc">成装、光明装、奥恩神器和纹章分开整理。每个子版块都有独立的前三名和完整榜单，方便你按主C需求快速查找。</p>
+          <p class="section-desc">成装、光明装、奥恩神器和纹章分开整理。特殊装备展示榜单 S / A / B 档，常规成装作为通用合成参考。</p>
         </header>
 
         <div class="item-toolbar reveal">
@@ -361,18 +365,19 @@
               成装 <small>8</small>
             </button>
             <button class="tab-btn" id="tab-radiant" type="button" role="tab" aria-selected="false" aria-controls="itemPanel" tabindex="-1" data-tab="radiant">
-              光明装 <small>6</small>
+              光明装 <small>20</small>
             </button>
             <button class="tab-btn" id="tab-ornn" type="button" role="tab" aria-selected="false" aria-controls="itemPanel" tabindex="-1" data-tab="ornn">
-              奥恩神器 <small>6</small>
+              奥恩神器 <small>17</small>
             </button>
             <button class="tab-btn" id="tab-emblem" type="button" role="tab" aria-selected="false" aria-controls="itemPanel" tabindex="-1" data-tab="emblem">
-              纹章 <small>6</small>
+              纹章 <small>11</small>
             </button>
           </div>
           <p class="tab-hint" id="tabHint"></p>
         </div>
 
+        <p class="source-line">榜单来源 <a href="https://jcc.datatft.com/item/tier" target="_blank" rel="noopener">datatft 装备榜</a> · 评级由 TLG糕手雕妹 提供。</p>
         <div class="item-panel" id="itemPanel" role="tabpanel" aria-labelledby="tab-normal"></div>
       </div>
     </section>
@@ -413,7 +418,8 @@
           <a href="#items">装备排行</a>
         </nav>
         <div class="footer-note">
-          <p>本站为个人教学资料整理，与官方无关。当前展示为演示数据，请以游戏内实际内容为准。</p>
+          <p>本站为个人教学资料整理，与官方无关。榜单数据参考 datatft，评级仅供参考，请以游戏内实际内容为准。</p>
+          <p class="footer-source">榜单参考：<a href="https://jcc.datatft.com/comp/rank" target="_blank" rel="noopener">阵容</a> · <a href="https://jcc.datatft.com/augment/tier" target="_blank" rel="noopener">海克斯</a> · <a href="https://jcc.datatft.com/item/tier" target="_blank" rel="noopener">装备</a></p>
           <p class="footer-meta">最后更新 <span id="footerUpdated">2026-11-19</span></p>
         </div>
       </div>
@@ -452,16 +458,18 @@
           <section class="modal-section">
             <h4>核心装备</h4>
             <div class="core-items" id="modalItems"></div>
-            <h4 class="mt">站位思路</h4>
-            <p class="modal-text" id="modalPosition"></p>
+            <div id="modalPositionSection">
+              <h4 class="mt">站位思路</h4>
+              <p class="modal-text" id="modalPosition"></p>
+            </div>
           </section>
         </div>
-        <section class="modal-section">
+        <section class="modal-section" id="modalRhythmSection">
           <h4>运营节奏</h4>
           <ol class="rhythm" id="modalRhythm"></ol>
         </section>
         <blockquote class="modal-note" id="modalNote"></blockquote>
-        <section class="code-box">
+        <section class="code-box" id="modalCodeBox">
           <div class="code-head">
             <div>
               <h4>阵容码</h4>

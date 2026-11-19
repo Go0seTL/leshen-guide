@@ -42,7 +42,7 @@
   /* ============================ 基础信息 ============================ */
 
   function initMeta() {
-    const season = String(META.version || "S15 · 示例版本").split("·")[0].trim();
+    const season = String(META.version || "S18 · 18.6").split("·")[0].trim();
     const heroVersion = $("#heroVersion");
     const currentVersion = $("#currentVersion");
     const lastUpdated = $("#lastUpdated");
@@ -61,8 +61,10 @@
     if (footerBrandName) footerBrandName.textContent = META.brand || "乐神攻略站";
     if (footerBrandEn) footerBrandEn.textContent = META.brandEn || "LESHEN · TFT MOBILE GUIDE";
     if (heroVersion) heroVersion.textContent = `${season} 赛季 · 攻略资料库持续更新`;
-    if (currentVersion) currentVersion.textContent = META.version || "S15 · 示例版本";
-    if (mobileVersion) mobileVersion.textContent = META.version || "S15 · 示例版本";
+    const emblemSeason = $("#emblemSeason");
+    if (emblemSeason) emblemSeason.textContent = season;
+    if (currentVersion) currentVersion.textContent = META.version || "S18 · 18.6";
+    if (mobileVersion) mobileVersion.textContent = META.version || "S18 · 18.6";
     if (lastUpdated) lastUpdated.textContent = META.updated || "";
     if (footerUpdated) footerUpdated.textContent = META.updated || "";
     if (authorName) authorName.textContent = META.author || "乐神";
@@ -140,7 +142,7 @@
     const versionBig = $("#updateVersionBig");
     if (versionBig) {
       const parts = String(first.version || META.version || "").split("·").map((part) => part.trim());
-      versionBig.innerHTML = `<span class="ver-main">${esc(parts[0] || META.version || "S15")}</span>${
+      versionBig.innerHTML = `<span class="ver-main">${esc(parts[0] || META.version || "S18")}</span>${
         parts[1] ? `<span class="ver-sub">${esc(parts[1])}</span>` : ""
       }`;
     }
@@ -155,8 +157,10 @@
 
   const TIER_META = {
     S: { label: "版本答案", rowClass: "tier-s-row" },
-    A: { label: "稳定上分", rowClass: "tier-a-row" },
-    B: { label: "环境备选", rowClass: "tier-b-row" }
+    A: { label: "强势上分", rowClass: "tier-a-row" },
+    B: { label: "可用阵容", rowClass: "tier-b-row" },
+    C: { label: "特定环境", rowClass: "tier-c-row" },
+    D: { label: "娱乐备选", rowClass: "tier-d-row" }
   };
 
   function renderTeams() {
@@ -164,10 +168,10 @@
     if (!container) return;
 
     const teams = Array.isArray(DATA.teams) ? DATA.teams.slice() : [];
-    const tiers = ["S", "A", "B"]
+    const tiers = ["S", "A", "B", "C", "D"]
       .map((tier) => ({
         tier,
-        teams: teams.filter((team) => team.tier === tier).sort((a, b) => (b.rating || 0) - (a.rating || 0))
+        teams: teams.filter((team) => team.tier === tier)
       }))
       .filter((group) => group.teams.length);
 
@@ -181,28 +185,20 @@
               <div class="team-media">
                 ${imgTag("teams", team.id, `${team.name} 阵容图`)}
                 <span class="tier-badge tier-${group.tier.toLowerCase()}">${esc(group.tier)}</span>
-                <span class="strength-badge">强度 <b>${esc(team.rating)}</b></span>
+                <span class="strength-badge">版本 <b>${esc(META.sourceVersion || "")}</b></span>
               </div>
               <div class="team-body">
                 <div class="team-tags">${(team.tags || []).map((tag) => `<span>${esc(tag)}</span>`).join("")}</div>
                 <h3>${esc(team.name)}</h3>
                 <p class="team-summary">${esc(team.summary || "")}</p>
                 <div class="team-foot">
-                  <span class="difficulty">难度 <b>${esc(team.difficulty || "中")}</b></span>
+                  <span class="difficulty">主C <b>${esc(team.carry || "-")}</b></span>
                   <span class="detail-link">查看攻略 ${icon("arrow")}</span>
                 </div>
               </div>
             </article>`
           )
           .join("");
-
-        const placeholders = (3 - (group.teams.length % 3)) % 3;
-        const placeholderCards = Array.from({ length: placeholders }, () => `
-            <div class="team-card team-placeholder" aria-hidden="true">
-              <span class="placeholder-plus">+</span>
-              <strong>更多阵容整理中</strong>
-              <small>版本更新后持续补充</small>
-            </div>`).join("");
 
         return `
           <div class="tier-row ${meta.rowClass} reveal" style="--d:${groupIndex * 70}ms">
@@ -211,7 +207,7 @@
               <span class="tier-name">${esc(meta.label)}</span>
               <span class="tier-count">${group.teams.length} 套阵容</span>
             </div>
-            <div class="tier-cards">${cards}${placeholderCards}</div>
+            <div class="tier-cards">${cards}</div>
           </div>`;
       })
       .join("");
@@ -233,7 +229,13 @@
     if (!grid) return;
     currentRarity = rarity;
 
-    const all = Array.isArray(DATA.hexes) ? DATA.hexes.slice().sort((a, b) => (a.rank || 0) - (b.rank || 0)) : [];
+    const rarityOrder = { 银: 0, 金: 1, 棱彩: 2 };
+    const all = Array.isArray(DATA.hexes)
+      ? DATA.hexes.slice().sort((a, b) => {
+          const rarityDiff = (rarityOrder[a.rarity] ?? 9) - (rarityOrder[b.rarity] ?? 9);
+          return rarityDiff || (a.rank || 0) - (b.rank || 0);
+        })
+      : [];
     const list = rarity === "全部" ? all : all.filter((hex) => hex.rarity === rarity);
 
     grid.innerHTML = list
@@ -300,6 +302,7 @@
         (item, index) => `
         <article class="podium-card spotlight" style="animation-delay:${index * 70}ms">
           <span class="podium-crown">TOP ${item.rank}</span>
+          ${item.tier ? `<span class="podium-tier tier-${esc(item.tier.toLowerCase())}">${esc(item.tier)}</span>` : ""}
           <span class="podium-rank" aria-hidden="true">${pad2(item.rank)}</span>
           <div class="podium-icon">${imgTag("items", item.id, `${item.name} 装备图标`)}</div>
           <div class="podium-info">
@@ -319,7 +322,7 @@
           <span class="item-rank">${pad2(item.rank)}</span>
           <div class="item-icon">${imgTag("items", item.id, `${item.name} 装备图标`)}</div>
           <div class="item-name">
-            <h4>${esc(item.name)}</h4>
+            <h4>${esc(item.name)}${item.tier ? `<span class="item-tier tier-${esc(item.tier.toLowerCase())}">${esc(item.tier)}</span>` : ""}</h4>
             <small>${esc(item.obtain || "")}</small>
           </div>
           <div class="item-stats">${esc(item.stats || "")}</div>
@@ -349,6 +352,11 @@
   function initTabs() {
     const tabs = $(".item-tabs");
     if (!tabs) return;
+    $$(".tab-btn", tabs).forEach((button) => {
+      const group = DATA.items && DATA.items[button.dataset.tab];
+      const badge = button.querySelector("small");
+      if (group && badge) badge.textContent = String(group.list.length);
+    });
     tabs.addEventListener("click", (event) => {
       const button = event.target.closest("[data-tab]");
       if (button) activateTab(button.dataset.tab);
@@ -530,10 +538,10 @@
     $("#modalTitle").textContent = team.name || "阵容详情";
     $("#modalTags").innerHTML = (team.tags || []).map((tag) => `<span>${esc(tag)}</span>`).join("");
     $("#modalStats").innerHTML = `
-      <span class="modal-stat"><small>强度评分</small><b class="gold">${esc(team.rating || "-")}</b></span>
-      <span class="modal-stat"><small>强度档位</small><b>${esc(team.tier || "-")}</b></span>
-      <span class="modal-stat"><small>运营难度</small><b>${esc(team.difficulty || "-")}</b></span>
-      <span class="modal-stat"><small>阵容人口</small><b>${(team.lineup || []).length} 人口</b></span>`;
+      <span class="modal-stat"><small>榜单评级</small><b class="gold">${esc(team.tier || "-")}</b></span>
+      <span class="modal-stat"><small>主C</small><b>${esc(team.carry || "-")}</b></span>
+      <span class="modal-stat"><small>阵容人口</small><b>${(team.lineup || []).length} 人口</b></span>
+      <span class="modal-stat"><small>数据版本</small><b>${esc(META.sourceVersion || "-")}</b></span>`;
 
     $("#modalLineup").innerHTML = (team.lineup || [])
       .map(
@@ -546,12 +554,30 @@
       .map((item) => `<span class="core-item">${esc(item)}</span>`)
       .join("");
 
-    $("#modalPosition").textContent = team.position || "暂无站位说明。";
-    $("#modalRhythm").innerHTML = (team.rhythm || [])
-      .map((step) => `<li><time>${esc(step.time || "")}</time><p>${esc(step.text || "")}</p></li>`)
-      .join("");
-    $("#modalNote").textContent = team.note || "";
-    $("#modalCode").textContent = team.code || "暂无阵容码";
+    const positionSection = $("#modalPositionSection");
+    if (positionSection) {
+      positionSection.hidden = !team.position;
+      $("#modalPosition").textContent = team.position || "";
+    }
+
+    const rhythmSection = $("#modalRhythmSection");
+    if (rhythmSection) {
+      const hasRhythm = Array.isArray(team.rhythm) && team.rhythm.length > 0;
+      rhythmSection.hidden = !hasRhythm;
+      $("#modalRhythm").innerHTML = hasRhythm
+        ? team.rhythm.map((step) => `<li><time>${esc(step.time || "")}</time><p>${esc(step.text || "")}</p></li>`).join("")
+        : "";
+    }
+
+    const modalNote = $("#modalNote");
+    if (modalNote) {
+      modalNote.hidden = !team.note;
+      modalNote.textContent = team.note || "";
+    }
+
+    const codeBox = $("#modalCodeBox");
+    if (codeBox) codeBox.hidden = !team.code;
+    $("#modalCode").textContent = team.code || "";
 
     const copyButton = $("#copyCode");
     if (copyButton) {
