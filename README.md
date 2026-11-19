@@ -2,6 +2,9 @@
 
 一个纯静态、零依赖的攻略资料站，手机 / 电脑打开都能正常显示。
 
+> 线上地址：<https://go0setl.github.io/leshen-guide/>  
+> 仓库地址：<https://github.com/Go0seTL/leshen-guide>
+
 包含板块：
 
 1. 前言
@@ -237,6 +240,18 @@ gh repo create leshen-guide --public --source=. --remote=origin --push
 Pages 需要在网页端 Settings → Pages 打开，或者再用 API 开启。
 
 > 仓库名用 `leshen-guide`、`jcc-guide` 都可以。如果你叫我直接帮你建仓库，告诉我想要的仓库名即可。
+
+### 以后更新网站
+
+改完 `js/data.js` 或替换完图片后，在 `E:\LeShenJCCWeb` 里执行：
+
+```bash
+git add .
+git commit -m "更新攻略内容"
+git push
+```
+
+GitHub Pages 会自动重新构建，等 1–2 分钟刷新线上地址即可。
 
 ---
 
